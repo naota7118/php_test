@@ -123,7 +123,7 @@ $token = $_SESSION['csrfToken'];
 性別
 
 <input type="radio" name="gender" value="0"
-<?php if(!empty($_POST['gender']) && $_POST['gender'] === '0')
+<?php if($_POST['gender'] === '0')
 { echo 'checked'; } ?>
 >男性
 
