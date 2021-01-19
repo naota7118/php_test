@@ -68,4 +68,66 @@ echo ('</pre>');
 
 echo $array_member_3 ['A組']['乾']['身長'];
 
+$height = '91';
+
+echo '<br>';
+if ($height !== 91) {
+  echo '身長は' . $height . 'cmです';
+}
+
+echo '<br>';
+$signal = 'green';
+
+if ($signal === 'red') {
+  echo '止まれ';
+} else if ($signal === 'yellow') {
+  echo '一旦停止';
+} else {
+  echo '進め';
+}
+
+echo '<br>';
+$test = 'r';
+
+if(!empty($test)){
+  echo '変数は空です';
+}
+
+echo '<br>';
+$signal_1 = 'red';
+$signal_2 = 'yellow';
+if($signal_1 === 'red' || $signal_2 === 'blue') {
+  echo '赤と青です';
+}
+
+echo '<br>';
+$math = 80;
+$comment = $math >= 80 ? 'good' : 'not good';
+
+echo $comment;
+
+echo '<br>';
+$members = [
+  '本田' => [
+    '身長' => 166,
+    '体重' => 70
+  ],
+  '香川' => [
+    '身長' => 164,
+    '体重' => 66
+  ]
+];
+// echo '<br>';
+foreach ($members as $member) {
+  foreach ($member as $key => $value) {
+    echo $key, $value;
+  };
+}
+echo '<br>';
+foreach ($members as $key => $value) {
+  echo $key, $value ;
+}
+
+
+
 ?>
