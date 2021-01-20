@@ -168,6 +168,7 @@ switch ($switch) {
     echo '4です';
 }
 
+echo '<br>';
 if ($switch === 1) {
   echo '1です';
 }
@@ -178,5 +179,49 @@ if ($switch === 3) {
   echo '1です';
 }
 
+echo '<br>';
+$comment2 = 'コメント2';
+
+function getComment ($string) {
+  // 処理
+  echo $string;
+}
+
+getComment($comment2);
+
+echo '<br>';
+
+function getNumberOfComment($comment5) {
+  return 5;
+}
+
+$number = getNumberOfComment('コメント5');
+echo $number;
+
+echo '<br>';
+$text = 'アイウエオ';
+echo strlen($text);
+
+echo '<br>';
+$str = '文字列を置換します';
+echo str_replace('置換', 'ちかん', $str);
+
+$str_5 = 'エンジニアを、目指します';
+echo '<pre>';
+var_dump (explode('、', $str_5));
+echo '</pre>';
+
+$array_3 = ['みかん', 'りんご'];
+array_push($array_3, 'バナナ');
+var_dump($array_3);
+
+echo '<br>';
+$globalValiable = 'グローバル変数です';
+function checkScope ($str) {
+  $localValiable = 'ローカル変数です';
+  echo $str;
+};
+
+checkScope ($globalValiable);
 
 ?>
