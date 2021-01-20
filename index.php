@@ -128,6 +128,55 @@ foreach ($members as $key => $value) {
   echo $key, $value ;
 }
 
+echo '<br>';
+// for (条件) {
+//   処理
+// };
+
+for ($i = 0; $i < 10; $i++ ) {
+  if ($i === 5) {
+    // break;
+    continue;
+  }
+  if ($i === 8) {
+    // break;
+    continue;
+  }
+  echo $i;
+};
+
+echo '<br>';
+$j = 0;
+while($j < 5){
+  echo $j;
+  $j++;
+}
+
+echo '<br>';
+$switch = 1;
+switch ($switch) {
+  case 1:
+    echo '1です';
+    break;
+  case 2:
+    echo '2です';
+    break;
+  case 3:
+    echo '3です';
+    break;
+  default:
+    echo '4です';
+}
+
+if ($switch === 1) {
+  echo '1です';
+}
+if ($switch === 2) {
+  echo '1です';
+}
+if ($switch === 3) {
+  echo '1です';
+}
 
 
 ?>
