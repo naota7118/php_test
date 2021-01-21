@@ -224,4 +224,17 @@ function checkScope ($str) {
 
 checkScope ($globalValiable);
 
+echo '<br>';
+// ファイルの読み込み
+require __DIR__ . '/common/common.php';
+
+echo $commonVariable;
+echo '<br>';
+commonTest();
+
+exit;
+echo __DIR__;
+echo __FILE__;
+
+
 ?>
