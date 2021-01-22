@@ -1,3 +1,9 @@
+<?php
+
+echo $_GET['your_name'];
+
+?>
+
 <!DOCTYPE html>
 <meta charset="utf-8">
 <head>
